@@ -198,8 +198,7 @@ app.save = function (window) {
 app.getBaseName = function (window) {
   window = window || this.getActiveWindow();
   if (!window || !window.filename) return;
-  let name = path.basename(window.filename, '.md');
-  return name;
+  return window.filename;
 };
 
 //另存为
